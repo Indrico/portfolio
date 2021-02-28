@@ -26,9 +26,15 @@ section {
     padding: 30px;
 }
 
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .profile-picture img {
-    width: 100%;
-    height: 300px;
+    width: 65%;
+    height: 200px;
     object-fit: cover;
     object-position: 0% 15%;
     border-radius: 20px;
@@ -63,4 +69,140 @@ section {
 
 .profile-contact i {
     margin-right: 10px;
+}
+
+.profile-contact p a {
+    text-decoration: none;
+    color: unset;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 40px;
+}
+
+.skill, .hobbies{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.skill h2{
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 20px;
+    background: white;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #2F80ED;
+    border-radius: 10px;
+}
+
+#CSS {
+    width: 85%;
+}
+
+#Javascript {
+    width: 70%;
+}
+
+#PHP {
+    width: 60%;
+}
+
+#Python {
+    width: 60%;
+}
+
+#MySQL {
+    width: 50%;
+}
+
+#Adobe-XD {
+    width: 50%;
+}
+
+.hobbies h2{
+    margin-bottom: 10px;
+}
+
+.hobby-item {
+    margin-bottom: 30px;
+}
+
+.hobby-item p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hobby-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-header {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+.projects{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.projects img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-hashtags{
+    display: flex;
+}
+
+.hashtag-item {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.project-heading{
+    margin-bottom: 10px;
+}
+
+.project-overview{
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: 0;
+    border: 1px solid #2F80ED;
+    border-radius: 5px;
+    color: #2F80ED;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-demo{
+    background: #2F80ED;
+    color: white;
 }
