@@ -176,11 +176,17 @@ section {
 
 .project-hashtags{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hashtag-item {
     margin-right: 10px;
     margin-bottom: 20px;
+}
+
+.hashtag-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .project-heading{
