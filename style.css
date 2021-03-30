@@ -212,3 +212,40 @@ section {
     background: #2F80ED;
     color: white;
 }
+
+@media (max-width: 1400px){
+    body{
+        max-width: 85%;
+    }
+    .grid{
+        column-gap: 30px;
+    }
+    .skill-item{
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media (max-width: 480px){
+    .profile{
+        grid-template-columns: 1fr;
+    }
+    .profile-header{
+        grid-template-columns: 1fr;
+    }
+    .profile-contact p {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    .projects img{
+        margin-bottom: 1rem;
+    }
+    .project-hashtags{
+        font-size: 13px;
+    }
+}
