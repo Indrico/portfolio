@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" amp>
+
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indrico Portopolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://indrico.xyz/portfolio">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" />
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+    <style amp-custom>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            font-family: 'Nunito', sans-serif;
+            width: 90%;
+            margin: auto;
+        }
+
+        section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+        }
+
+        .profile {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            column-gap: 40px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 30px;
+        }
+
+        .profile-picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-picture img {
+            width: 65%;
+            height: 200px;
+            object-fit: cover;
+            object-position: 0% 15%;
+            border-radius: 20px;
+        }
+
+        .profile-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+        }
+
+        .profile-name {
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 10px;
+            margin-top: 1rem;
+        }
+
+        .profile-job {
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .profile-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .profile-contact p {
+            font-size: 24px;
+        }
+
+        .profile-contact i {
+            margin-right: 10px;
+        }
+
+        .profile-contact p a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 40px;
+        }
+
+        .skill,
+        .hobbies {
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .skill h2 {
+            margin-bottom: 30px;
+        }
+
+        .skill-item {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 3fr;
+            margin-bottom: 20px;
+        }
+
+        .progress {
+            height: 20px;
+            background: white;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .progress-bar {
+            height: 20px;
+            background: #2F80ED;
+            border-radius: 10px;
+        }
+
+        #CSS {
+            width: 85%;
+        }
+
+        #Javascript {
+            width: 70%;
+        }
+
+        #PHP {
+            width: 60%;
+        }
+
+        #Python {
+            width: 60%;
+        }
+
+        #MySQL {
+            width: 50%;
+        }
+
+        #Adobe-XD {
+            width: 50%;
+        }
+
+        .hobbies h2 {
+            margin-bottom: 10px;
+        }
+
+        .hobby-item {
+            margin-bottom: 30px;
+        }
+
+        .hobby-item p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .hobby-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-header {
+            padding: 20px 30px;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .projects img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-hashtags {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .hashtag-item {
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        .hashtag-item:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .project-heading {
+            margin-bottom: 10px;
+        }
+
+        .project-overview {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            outline: 0;
+            border: 1px solid #2F80ED;
+            border-radius: 5px;
+            color: #2F80ED;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .btn-demo {
+            background: #2F80ED;
+            color: white;
+        }
+
+        .dots {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .dots div {
+            display: inline-block;
+            background: #ccc;
+            border-radius: 6px;
+            width: 12px;
+            height: 12px;
+            margin: 4px;
+        }
+
+        .dots div.current {
+            background: #555;
+        }
+
+        @media (max-width: 480px) {
+            .profile {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-header {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-contact p {
+                font-size: 16px;
+                margin-bottom: 1rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .projects img {
+                margin-bottom: 1rem;
+                object-fit: contain;
+            }
+
+            .project-hashtags {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <amp-state id="selected">
+        <script type="application/json">
+            {
+                "project": 1
+            }
+        </script>
+    </amp-state>
+    
+    <amp-state id="projects">
+        <script type="application/json">
+        {
+            "1": {
+                "image": "Image/sentiment_analysis.png",
+                "title": "Twitter Sentiment Analysis",
+                "hashtag": "#Django, #Python, #Sentiment_Analysis, #Twitter_API, #Bulma, #Responsive_Website",
+                "description": "In this project, I work with Twitter API, Django Framework, Scikit - learn library for Sentiment Analysis in Indonesia Language. I'm using Support Vector Machine Algorithm to classifying those tweet. For the interface I 'm using Bulma CSS",
+                "demoLink": "https://indrico-analisa-sentimen.herokuapp.com/",
+                "code": "https://github.com/Indrico/Sentiment_Analysis"
+            },
+            "2": {
+                "image": "Image/edie_homepage.png",
+                "title": "Edie Homepage", 
+                "hashtag": "#HTML, #CSS, #Javascript, #Responsive_Website", 
+                "description": "In this project, I completed challenge in devChallenges.io with HTML, CSS and JS. Most layout I'm created using Grid. Also for mobile navigation I'm using JS too when user click the burger button, event fired.",
+                "demoLink": "https://indrico-edie-homepage.netlify.app/",
+                "code": "https://github.com/Indrico/edie-homepage"
+            },
+            "3": {
+                "image": "Image/checkout_page.png",
+                "title": "Checkout Page", 
+                "hashtag": "#HTML, #CSS, #Responsive_Website", 
+                "description": "In this project, I completed challenge in devChallenges.io with HTML and CSS. It's also mobile responsive and I'm using Icon from material icon. Layout created using grid.",
+                "demoLink": "https://indrico-checkout-page.netlify.app/",
+                "code": "https://github.com/Indrico/checkout-page"
+            }
+        }
+        </script>
+    </amp-state>
+    <div class="container">
+        <section class="profile">
+            <div class="profile-picture">
+                <amp-img width="190" height="200" src="Image/profile.jpg">
+            </div>
+            <div class="profile-description">
+                <div class="profile-header">
+                    <div class="profile-name">
+                        <h2 class="profile-name">Indrico Jowensen</h2>
+                        <p class="profile-job">Web Developer</p>
+                    </div>
+                    <div class="profile-contact">
+                        <p><i class="fas fa-globe" title="Website"></i><a
+                                href='https://indrico.xyz'>https://indrico.xyz</a>
+                        </p>
+                        <p><i class="fab fa-github" title="Github"></i><a
+                                href='https://github.com/indrico'>https://github.com/indrico</a></p>
+                    </div>
+                    <p class="profile-bio">I'm aspiring web developer also I'm love playing games</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid">
+            <div class="grid-left">
+                <section class="skill">
+                    <h2>Web Developer</h2>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <p>CSS</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="CSS"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Javascript</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="Javascript"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>PHP</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="PHP"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>MySQL</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="MySQL"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Python</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="PHP"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Adobe XD</p>
+                            <div class="progress">
+                                <div class="progress-bar" id="Adobe-XD"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="hobbies">
+                    <h2>Hobbies</h2>
+                    <div class="hobby-list">
+                        <div class="hobby-item">
+                            <amp-img width="290" height="250" src="Image/books.webp">
+                            <p>Reading</p>
+                        </div>
+                        <div class="hobby-item">
+                            <amp-img width="290" height="250" src="Image/gamer_room.jpg">
+                            <p>Gaming</p>
+                        </div>
+                        <div class="hobby-item">
+                            <amp-img width="290" height="250" src="Image/headphone.jpg">
+                            <p>Music</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="grid-right">
+                <section class="project-header">
+                    <h2>Projects <span id='total-project'></span> </h2>
+                </section>
+
+                <section class="projects">
+                    <amp-img width="292" height="200" src='Image/sentiment_analysis.png' [src]="projects[selected.project].image"> </amp-img>
+                    <div class="project-description">
+                        <div class="project-hashtags" [text]="projects[selected.project].hashtag">
+                            #Django, #Python, #Sentiment_Analysis, #Twitter_API, #Bulma, #Responsive_Website
+                        </div>
+                        <div class="project-heading">
+                            <h2 [text]="projects[selected.project].title">Twitter Sentiment Analysis</h2>
+                        </div>
+
+                        <div class="project-overview" [text]="projects[selected.project].description">
+                            <p>
+                                In this project, I work with Twitter API, Django Framework, Scikit - learn library
+                                for Sentiment Analysis in Indonesia Language. I'm using Support Vector Machine
+                                Algorithm to classifying those tweet. For the interface I 'm using Bulma CSS
+                            </p>
+                        </div>
+                        <div class="demo">
+                            <a href='https://indrico-analisa-sentimen.herokuapp.com/' [href]="projects[selected.project].demoLink" target="_blank"
+                                rel="nofollow"><button class="btn btn-demo">Demo</button></a>
+                            <a href='https://github.com/Indrico/Sentiment_Analysis' [href]="projects[selected.project].code" target="_blank"
+                                rel="nofollow"><button class="btn btn-code">Code</button></a>
+                        </div>
+                    </div>
+                    <amp-selector class="dots" on="select:AMP.setState({selected: {project: event.targetOption} })">
+                        <div [class]="selected.project == 1 ? 'current' : ''" class="current" option="1"></div>
+                        <div [class]="selected.project == 2 ? 'current' : ''" option="2"></div>
+                        <div [class]="selected.project == 3 ? 'current' : ''" option="3"></div>
+                    </amp-selector>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
